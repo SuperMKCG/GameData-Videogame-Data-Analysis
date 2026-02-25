@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GameData Analytics | Analisis de Datos de Videojuegos</title>
+        <meta name="description" content="Proyecto de analisis de datos sobre la industria de los videojuegos: origen, influencia en las personas y objetivos del estudio.">
+
+        <!--Favicon-->
+        <link rel="icon" type="image/jpg" href="favicon/favicon-index.jpg">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">Game<span>Data</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recommendation.html">Recomendaciones para el usuario</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- INICIO -->
+        <section class="hero-section fade-in section-animate" id="inicio">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="hero-badge">
+                            <i class="bi bi-controller me-1"></i> Analisis de Datos
+                        </div>
+                        <h1 class="hero-title">
+                            Analisis de la Industria de los <span>Videojuegos</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Análisis integral de la evolución del ecosistema gaming y su impacto en el consumidor.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#origen" class="btn btn-teal">
+                                <i class="bi bi-arrow-down-circle me-2"></i>Descubrir el Origen
+                            </a>
+                            <a href="#proyecto" class="btn btn-outline-light-custom">
+                                <i class="bi bi-info-circle me-2"></i>Sobre el Proyecto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION 1 - ORIGEN DE LOS VIDEOJUEGOS     -->
+        <section class="py-5 bg-light-custom fade-in section-animate" id="origen">
+            <div class="container py-4">
+
+            <div class="text-center fade-in">
+                <h2 class="section-title">El Origen de los Videojuegos</h2>
+                <hr class="section-divider">
+                <p class="section-subtitle">
+                Un recorrido por los momentos mas importantes que dieron vida a una
+                industria que hoy mueve miles de millones de dolares y conecta a miles
+                de millones de personas.
+                </p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 fade-in-left">
+                    <div class="img-card">
+                        <img src="images/retro-gaming.jpg" alt="Maquinas arcade clasicas de los anos 70 y 80">
+                            <div class="img-card-overlay">
+                                <h6>La Era Arcade</h6>
+                                <small>Decada de 1970 - 1980</small>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6 fade-in-right">
+                    <div class="img-card">
+                        <img src="images/modern-gaming.jpg" alt="Arena de esports moderna con pantallas gigantes">
+                            <div class="img-card-overlay">
+                                <h6>La Era Moderna</h6>
+                                <small>2000 - Presente</small>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto fade-in">
+                    <div class="p-4 bg-white rounded-3 shadow-sm" style="border-left: 4px solid var(--teal);">
+                        <p class="mb-3" style="font-size: 0.95rem; color: var(--gray-500); line-height: 1.8;">
+                        La historia de los videojuegos comienza en laboratorios universitarios a finales
+                        de la decada de 1950, cuando cientificos experimentaron con pantallas electronicas
+                        para crear experiencias interactivas. Lo que empezo como proyectos academicos se
+                        transformo en una industria multimillonaria que ha definido la cultura popular,
+                        impulsado avances tecnologicos y creado nuevas formas de entretenimiento, comunicacion
+                        y educacion.
+                        </p>
+                        <p class="mb-0" style="font-size: 0.95rem; color: var(--gray-500); line-height: 1.8;">
+                        Desde las primeras consolas domesticas hasta los torneos de esports con millones
+                        en premios, los videojuegos han evolucionado a un ritmo vertiginoso, superando
+                        en ingresos al cine y la musica combinados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">1958</span>
+                            <h5>Tennis for Two</h5>
+                            <p>
+                            El fisico William Higinbotham crea "Tennis for Two" en el Laboratorio
+                            Nacional de Brookhaven, considerado uno de los primeros videojuegos
+                            interactivos de la historia. Usaba un osciloscopio como pantalla.
+                            </p>
+                        </div>
+                    </div>
+                <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">1972</span>
+                        <h5>Pong y el Nacimiento de Atari</h5>
+                        <p>
+                        Nolan Bushnell funda Atari y lanza "Pong", el primer videojuego comercial
+                        exitoso que popularizo los juegos electronicos en el mercado masivo y
+                        dio inicio a la era de las maquinas arcade.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 1977 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">1977</span>
+                            <h5>Atari 2600</h5>
+                            <p>
+                            Se lanza la Atari 2600, la primera consola domestica verdaderamente popular.
+                            Introdujo el concepto de cartuchos intercambiables y llevo los videojuegos
+                            a los hogares de millones de familias.
+                            </p>
+                        </div>
+                    </div>
+
+                <!-- 1985 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">1985</span>
+                            <h5>Nintendo NES Revive la Industria</h5>
+                            <p>
+                            Tras el crash de 1983, Nintendo lanza la NES con titulos iconicos como
+                            Super Mario Bros., reviviendo la industria y estableciendo estandares
+                            de calidad que perduran hasta hoy.
+                            </p>
+                        </div>
+                    </div>
+
+                <!-- 1994 -->
+                <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">1994</span>
+                    <h5>PlayStation Revoluciona el Mercado</h5>
+                    <p>
+                    Sony lanza la PlayStation original, introduciendo los CDs como formato
+                    de juegos y atrayendo a un publico adulto, expandiendo enormemente
+                    la audiencia gamer a nivel mundial.
+                    </p>
+                </div>
+                </div>
+
+                <!-- 2001 -->
+                <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2001</span>
+                    <h5>Xbox y el Gaming Online</h5>
+                    <p>
+                    Microsoft entra al mercado con Xbox y poco despues lanza Xbox Live,
+                    popularizando el juego en linea en consolas y transformando para
+                    siempre la experiencia multijugador.
+                    </p>
+                </div>
+                </div>
+
+                <!-- 2007 -->
+                <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2007</span>
+                    <h5>La Era del Gaming Movil</h5>
+                    <p>
+                    Con el lanzamiento del iPhone y la App Store, los juegos moviles explotan
+                    en popularidad, abriendo la puerta a millones de jugadores casuales
+                    y creando un mercado completamente nuevo.
+                    </p>
+                </div>
+                </div>
+
+                <!-- 2020 -->
+                <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2020</span>
+                    <h5>Pandemia y Explosion Digital</h5>
+                    <p>
+                    La pandemia de COVID-19 impulsa un crecimiento masivo: la industria supera
+                    los $160 mil millones. Los videojuegos se consolidan como la principal
+                    forma de entretenimiento digital en el mundo.
+                    </p>
+                </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+
+    <!-- SECCION 2 - INFLUENCIA EN LAS PERSONAS    -->
+        <section class="py-5 fade-in section-animate" id="influencia">
+            <div class="container py-4">
+
+            <div class="text-center fade-in">
+                <h2 class="section-title">Influencia en la Vida Cotidiana</h2>
+                <hr class="section-divider">
+                <p class="section-subtitle">
+                Los videojuegos ya no son solo entretenimiento. Han transformado la forma
+                en que aprendemos, socializamos, trabajamos y nos expresamos como sociedad.
+                </p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3 fade-in">
+                <div class="stat-highlight text-center">
+                    <div class="big-number">3.2B</div>
+                    <div class="stat-caption">Jugadores en el Mundo</div>
+                    <div class="stat-text mt-2">Casi la mitad de la poblacion mundial juega en alguna plataforma.</div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-in">
+                <div class="stat-highlight text-center">
+                    <div class="big-number">7.5h</div>
+                    <div class="stat-caption">Promedio Semanal</div>
+                    <div class="stat-text mt-2">Tiempo promedio que un jugador dedica a los videojuegos cada semana.</div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-in">
+                <div class="stat-highlight text-center">
+                    <div class="big-number">65%</div>
+                    <div class="stat-caption">Adultos Gamers</div>
+                    <div class="stat-text mt-2">El 65% de los adultos en EE.UU. se consideran jugadores activos.</div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-in">
+                <div class="stat-highlight text-center">
+                    <div class="big-number">46%</div>
+                    <div class="stat-caption">Jugadoras Mujeres</div>
+                    <div class="stat-text mt-2">Las mujeres representan el 46% de todos los jugadores a nivel global.</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="influence-card">
+                    <div class="icon-box">
+                    <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h5>Conexion Social</h5>
+                    <p>
+                    Los videojuegos en linea se han convertido en espacios de socializacion donde
+                    millones de personas forman amistades, comunidades y equipos. Plataformas como
+                    Discord nacieron gracias al gaming y hoy conectan a personas de todo el mundo.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="influence-card">
+                    <div class="icon-box">
+                    <i class="bi bi-book-fill"></i>
+                    </div>
+                    <h5>Educacion y Aprendizaje</h5>
+                    <p>
+                    La gamificacion ha revolucionado la educacion. Juegos como Minecraft Education
+                    se usan en aulas de todo el mundo, y estudios demuestran que los videojuegos
+                    mejoran habilidades cognitivas, la resolucion de problemas y la creatividad.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="influence-card">
+                    <div class="icon-box">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                    </div>
+                    <h5>Salud Mental</h5>
+                    <p>
+                    Investigaciones recientes muestran que los videojuegos pueden reducir el estres
+                    y la ansiedad. Juegos como "Sea of Solitude" abordan temas de salud mental, y
+                    la terapia con videojuegos es un campo creciente en psicologia.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="influence-card">
+                    <div class="icon-box">
+                    <i class="bi bi-briefcase-fill"></i>
+                    </div>
+                    <h5>Economia y Empleo</h5>
+                    <p>
+                    La industria genera millones de empleos directos e indirectos: desarrolladores,
+                    disenadores, streamers, casters de esports, creadores de contenido y mas.
+                    Ser gamer profesional es hoy una carrera viable y lucrativa.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="influence-card">
+                    <div class="icon-box">
+                    <i class="bi bi-palette-fill"></i>
+                    </div>
+                    <h5>Cultura y Arte</h5>
+                    <p>
+                    Los videojuegos son reconocidos como una forma de arte. Titulos como "Journey",
+                    "The Last of Us" y "Celeste" han sido aclamados por sus narrativas, musica y
+                    diseno visual, influenciando el cine, la musica y la moda.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="influence-card">
+                    <div class="icon-box">
+                    <i class="bi bi-clock-fill"></i>
+                    </div>
+                    <h5>Rutina Diaria</h5>
+                    <p>
+                    Para muchas personas, los videojuegos son parte de su rutina diaria: una forma
+                    de relajarse despues del trabajo, conectar con amigos a distancia o simplemente
+                    disfrutar un momento de ocio antes de dormir.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto fade-in">
+                <div class="p-4 bg-light-custom rounded-3" style="border-left: 4px solid var(--teal);">
+                    <p class="mb-0" style="font-size: 0.95rem; color: var(--gray-500); line-height: 1.8;">
+                    <i class="bi bi-quote" style="font-size: 1.25rem; color: var(--teal); margin-right: 0.5rem;"></i>
+                    Los videojuegos han dejado de ser un simple pasatiempo para convertirse en un pilar
+                    cultural, social y economico de la vida moderna. Entender su impacto en las personas
+                    es fundamental para comprender hacia donde se dirige nuestra sociedad digital.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- SECCION 3 - SOBRE EL PROYECTO             -->
+        <section class="py-5 project-section fade-in section-animate" id="proyecto">
+            <div class="container py-4">
+
+            <div class="text-center fade-in">
+                <h2 class="section-title">Sobre Este Proyecto</h2>
+                <hr class="section-divider">
+                <p class="section-subtitle">
+                    Este proyecto personal de analisis de datos está enfocado en la industria de los videojuegos.
+                    El objetivo es explorar un dataset real y aplicar técnicas de limpieza, análisis y visualización
+                    para entender mejor el comportamiento del mercado y las tendencias a lo largo del tiempo.
+                </p>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto fade-in">
+                <div class="img-card">
+                    <img src="images/data-analysis.jpg" alt="Analista revisando datos de videojuegos en multiples pantallas" style="height: 360px;">
+                    <div class="img-card-overlay">
+                    <h6>Análisis de Datos de la industria gaming</h6>
+                    <small>kpis, dashboards y descubrimiento de patrones</small>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-10 mx-auto fade-in">
+                    <div class="p-4 rounded-3" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);">
+                        <p class="mb-3" style="font-size: 0.95rem; color: rgba(255,255,255,0.7); line-height: 1.8;">
+                            Este proyecto de analisis de datos se centra en recopilar, procesar y visualizar informacion
+                            relevante sobre la industria de los videojuegos. A través de conjuntos de datos publicos y
+                            fuentes confiables, se busca responder preguntas clave sobre ventas, géneros populares,
+                            publishers dominantes, ventas por región y juegos queridos por la comunidad.
+                        </p>
+                        <p class="mb-0" style="font-size: 0.95rem; color: rgba(255,255,255,0.7); line-height: 1.8;">
+                            El resultado sera una serie de dashboards interactivos y visualizaciones que permitirán
+                            explorar los datos de forma intuitiva, facilitando la toma de decisiones informadas y la
+                            comprension profunda de una industria que no deja de crecer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="project-card">
+                    <div class="icon-circle">
+                    <i class="bi bi-database-fill"></i>
+                    </div>
+                    <h5>Recopilación de Datos</h5>
+                    <p>
+                        Se utilizó un dataset público de plataformas como Kaggle
+                        para obtener informacion sobre ventas, calificaciones, generos y plataformas
+                        de miles de videojuegos.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="project-card">
+                    <div class="icon-circle">
+                    <i class="bi bi-gear-fill"></i>
+                    </div>
+                    <h5>Procesamiento y Limpieza</h5>
+                    <p>
+                        Los datos se procesan y limpian para eliminar inconsistencias, valores
+                        faltantes y duplicados, asegurando la calidad y confiabilidad del analisis.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="project-card">
+                    <div class="icon-circle">
+                    <i class="bi bi-bar-chart-line-fill"></i>
+                    </div>
+                    <h5>Visualizaciones Interactivas</h5>
+                    <p>
+                        Se crearon gráficos, dashboards y visualizaciones que permiten explorar 
+                        los datos de forma clara, comparar tendencias y descubrir patrones
+                        ocultos en la informacion.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="project-card">
+                    <div class="icon-circle">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h5>Analisis de Tendencias</h5>
+                    <p>
+                        Se identificó como han cambiado las preferencias de los jugadores: 
+                        que géneros crecen y hacia donde se dirige el mercado.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="project-card">
+                    <div class="icon-circle">
+                    <i class="bi bi-globe2"></i>
+                    </div>
+                    <h5>Perspectiva Global</h5>
+                    <p>
+                        El análisis cubre ventas por región, permitiendo entender 
+                        las diferencias culturales en los hábitos de juego.
+                    </p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                <div class="project-card">
+                    <div class="icon-circle">
+                    <i class="bi bi-lightbulb-fill"></i>
+                    </div>
+                    <h5>Insights y Conclusiones</h5>
+                    <p>
+                        Se generaron conclusiones basadas en datos que pueden ser útiles para
+                        cualquier persona interesada en entender esta industria.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+
+        <!-- FOOTER-->
+        <footer class="footer-custom">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="footer-brand mb-3">Game<span>Data</span></div>
+                <p style="font-size: 0.875rem; line-height: 1.7; max-width: 300px;">
+                    Proyecto de analisis de datos enfocado en la industria de los videojuegos.
+                    Exploramos datos, descubrimos tendencias y generamos conocimiento.
+                </p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                <h6>Secciones</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#inicio"><i class="bi bi-chevron-right me-1"></i>Inicio</a></li>
+                    <li class="mb-2"><a href="#proyecto"><i class="bi bi-chevron-right me-1"></i>El Proyecto</a></li>
+                    <li class="mb-2"><a href="dashboard.html"><i class="bi bi-chevron-right me-1"></i>Dashboard</a></li>
+                    <li class="mb-2"><a href="recommendation.html"><i class="bi bi-chevron-right me-1"></i>Recomendaciones para el usuario</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-4">
+                <h6>Fuentes de Datos</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="https://www.kaggle.com" target="_blank" rel="noopener">Kaggle Datasets</a></li>
+                    <li class="mb-2"><a href="https://www.vgchartz.com" target="_blank" rel="noopener">VGChartz</a></li>
+                    <li class="mb-2"><a href="https://newzoo.com" target="_blank" rel="noopener">Newzoo Reports</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p class="mb-0">GameData Analytics &mdash; Proyecto Academico de Analisis de Datos</p>
+            </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

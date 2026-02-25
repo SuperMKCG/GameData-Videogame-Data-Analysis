@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboards y KPIs | GameData Analytics</title>
+        <meta name="description" content="KPIs, graficas y visualizaciones de datos sobre la industria de los videojuegos.">
+
+        <!--Favicon-->
+        <link rel="icon" type="image/jpg" href="favicon/favicon-dashboard.jpg">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Game<span>Data</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recommendation.html">Recomendaciones para el usuario</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="dashboard-hero fade-in section-animate" id="dashtop">
+            <div class="container">
+                <div class="hero-badge">
+                    <i class="bi bi-graph-up me-1"></i>KPis y gráficas
+                </div>
+                <h1>Dashboards de la <span>industria gaming</span></h1>
+                <p>
+                    Visualizaciones y métricas clave que resumen el estado actual del mercado
+                    de videojuegos a nivel global: ingresos, plataformas, generos y tendencias regionales.
+                </p>
+                <div class="d-flex py-3 flex-wrap gap-4 justify-content-center">
+                    <a href="#kpis" class="btn btn-teal">
+                        <i class="bi bi-arrow-down-circle me-2"></i>Descubre kpis importantes
+                    </a>
+                    <a href="#insights" class="btn btn-outline-light-custom">
+                        <i class="bi bi-info-circle me-2"></i>Hallazgos clave
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion de kpis-->
+        <section class="py-5 bg-light-custom fade-in section-animate" id="kpis">
+            <div class="container py-4">
+
+                <div class="text-center fade-in">
+                    <h2 class="section-title">Indicadores Clave (KPIs)</h2>
+                    <hr class="section-divider">
+                    <p class="section-subtitle">
+                        Las metricas mas relevantes de la industria de los videojuegos que reflejan
+                        su escala, crecimiento y alcance global.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- KPI 1 -->
+                    <div class="col-md-6 col-xl-3 fade-in">
+                        <div class="kpi-card">
+                            <div class="kpi-icon">
+                                <i class="bi bi-currency-dollar"></i>
+                            </div>
+                            <div class="kpi-value">82.53 M</div>
+                            <div class="kpi-label">Juego líder en ventas global</div>
+                            <span class="kpi-change up"><i class="bi bi-arrow-up"></i>Top 1 global</span>
+                            <p class="kpi-desc">
+                                El juego <em><b>Wii Sports</b></em> lidera esta lista con este número de copias vendidas, 
+                                el cual representa el volumen máximo de ventas individuales registrado. Este valor establece 
+                                el punto de referencia para el éxito comercial de un solo título en la industria.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- KPI 2 -->
+                    <div class="col-md-6 col-xl-3 fade-in">
+                        <div class="kpi-card">
+                            <div class="kpi-icon">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <div class="kpi-value">1,205.65 M</div>
+                            <div class="kpi-label">Género de juego dominante</div>
+                            <span class="kpi-change up"><i class="bi bi-arrow-up"></i>Top 1 en ingresos</span>
+                            <p class="kpi-desc">
+                                El género de <em><b>acción</b></em> lidera la industria en volumen de copias vendidas
+                                representando el pilar comercial en esta industria e identifica el segmento de mercado con mayor volumen de 
+                                transacciones históricas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- KPI 3 -->
+                    <div class="col-md-6 col-xl-3 fade-in">
+                        <div class="kpi-card">
+                            <div class="kpi-icon">
+                            <i class="bi bi-phone-fill"></i>
+                            </div>
+                            <div class="kpi-value">868.5 M</div>
+                            <div class="kpi-label">Top Publisher</div>
+                            <span class="kpi-change up"><i class="bi bi-arrow-up"></i>Lider del mercado</span>
+                            <p class="kpi-desc">
+                                <em><b>Electronic Arts</b></em> encabeza el volumen de ventas globales, lo cual reflejan
+                                la capacidad de posición en el mercado a través de múltiples franquicias y plataformas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- KPI 4 -->
+                    <div class="col-md-6 col-xl-3 fade-in">
+                        <div class="kpi-card">
+                            <div class="kpi-icon">
+                            <i class="bi bi-trophy-fill"></i>
+                            </div>
+                            <div class="kpi-value">2,995 M</div>
+                            <div class="kpi-label">Mercado principal</div>
+                            <span class="kpi-change up"><i class="bi bi-arrow-up"></i> Región líder</span>
+                            <p class="kpi-desc">
+                                <em><b>Nortamerica</b></em> representa el volumen de consumo más alto. Este dato 
+                                delimita el territorio geográfico con mayor impacto en los ingresos globales del sector.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECCION - GRAFICAS-->
+        <section class="py-5 fade-in section-animate" id="graficas">
+            <div class="container py-4">    
+                <div class="text-center fade-in">
+                    <h2 class="section-title">Graficas y Visualizaciones</h2>
+                    <hr class="section-divider">
+                    <p class="section-subtitle">
+                        Representaciones visuales de los datos mas relevantes sobre ventas,
+                        plataformas, generos y tendencias de la industria gaming.
+                    </p>
+                </div>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6 fade-in">
+                        <div class="chart-card">
+                            <div class="chart-card-header">
+                                <h5><i class="bi bi-bar-chart-fill me-2" style="color: var(--teal);"></i>Top juegos más vendidos</h5>
+                                <p>Top 10 de juegos con más copias vendidas</p>
+                            </div>
+                            <div class="chart-card-body">
+                                <canvas id="chartRevenue"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 fade-in">
+                        <div class="chart-card">
+                            <div class="chart-card-header">
+                                <h5><i class="bi bi-joystick me-2" style="color: var(--teal);"></i>Géneros mas populares</h5>
+                                <p>Ranking de géneros de videojuegos con más copias vendidas.</p>
+                            </div>
+                            <div class="chart-card-body">
+                                <canvas id="chartGenres"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6 fade-in">
+                        <div class="chart-card">
+                            <div class="chart-card-header">
+                                <h5><i class="bi bi-building me-2" style="color: var(--teal);"></i>Top publishers por ventas</h5>
+                                <p>Las compañias editoras de videojuegos con mayores ventas globales acumuladas históricamente.</p>
+                            </div>
+                            <div class="chart-card-body">
+                                <canvas id="chartPublishers"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 fade-in">
+                        <div class="chart-card">
+                            <div class="chart-card-header">
+                                <h5><i class="bi bi-globe-americas me-2" style="color: var(--teal);"></i>Ventas por Region</h5>
+                                <p>Comparativa de ingresos por region a lo largo de los anos, mostrando el ascenso de mercados emergentes.</p>
+                            </div>
+                            <div class="chart-card-body">
+                                <canvas id="chartRegion"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECCION - INSIGHTS-->
+        <section class="py-5 project-section fade-in section-animate" id="insights">
+            <div class="container py-4">
+
+                <div class="text-center fade-in">
+                    <h2 class="section-title">Hallazgos Clave</h2>
+                    <hr class="section-divider">
+                    <p class="section-subtitle">
+                        Conclusiones y patrones detectados a partir del analisis de los datos
+                        presentados en los dashboards anteriores.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 fade-in">
+                        <div class="insight-card">
+                            <div class="insight-icon">
+                                <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </div>
+                            <h5>Estrategia multiplataforma vs. exclusivos</h5>
+                            <p>
+                              el liderazgo absoluto de Nintendo en ventas globales y posicionamiento de títulos 
+                              individuales demuestra que la fuerza de propiedad intelectual exclusiva generan 
+                              una rentabilidad y dominio de mercado superiores a largo plazo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 fade-in">
+                        <div class="insight-card">
+                            <div class="insight-icon">
+                                <i class="bi bi-joystick"></i>
+                            </div>
+                            <h5>Resiliencia del género de acción</h5>
+                            <p>
+                                La enorme brecha de ventas entre el género de acción y el resto de 
+                                las categorías sugiere que la inversión en mecánicas de combate y aventura 
+                                presenta el menor riesgo de retorno para los desarrolladores.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 fade-in">
+                        <div class="insight-card">
+                            <div class="insight-icon">
+                                <i class="bi bi-globe2"></i>
+                            </div>
+                            <h5>Localización e Infraestructura Regional</h5>
+                            <p>
+                                Dado que Norteamérica concentra más del 50% del mercado, es imperativo que 
+                                la arquitectura del sistema y la estrategia de marketing se optimicen para 
+                                los estándares de consumo de esta región.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 fade-in">
+                        <div class="insight-card">
+                            <div class="insight-icon">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h5>El Valor de la Propiedad Intelectual (IP)</h5>
+                            <p>
+                                La presencia constante de juegos de serie como Mario Kart o Wii Fit en los 
+                                primeros puestos confirma que la lealtad a la marca y las franquicias 
+                                son el motor principal de la retención de usuarios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer-custom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="footer-brand mb-3">Game<span>Data</span></div>
+                        <p style="font-size: 0.875rem; line-height: 1.7; max-width: 300px;">
+                            Proyecto de análisis de datos enfocado en la industria de los videojuegos.
+                            se exploran datos, se descubren tendencias y se genera conocimiento.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h6>Navegacion</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#dashtop"><i class="bi bi-chevron-right me-1"></i>Inicio</a></li>
+                            <li class="mb-2"><a href="#kpis"><i class="bi bi-chevron-right me-1"></i>Indicadores clave</a></li>
+                            <li class="mb-2"><a href="#graficas"><i class="bi bi-chevron-right me-1"></i>Gráficas</a></li>
+                            <li class="mb-2"><a href="#insights"><i class="bi bi-chevron-right me-1"></i>Hallazgos clave</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6>Fuentes de Datos</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="https://www.kaggle.com" target="_blank" rel="noopener">Kaggle Datasets</a></li>
+                            <li class="mb-2"><a href="https://www.vgchartz.com" target="_blank" rel="noopener">VGChartz</a></li>
+                            <li class="mb-2"><a href="https://newzoo.com" target="_blank" rel="noopener">Newzoo Reports</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom text-center">
+                    <p class="mb-0">GameData Analytics &mdash; Proyecto Academico de Analisis de Datos</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap 5 JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="js/main.js"></script>
+        <script src="js/chart.js"></script>
+
+    </body>
+</html>
